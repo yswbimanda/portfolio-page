@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bimanda Yuswandono — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── NAV ── -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <span class="nav-logo">BY</span>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="mailto:bimandayusw@gmail.com" class="nav-cta">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section class="hero" id="top">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+    <div class="hero-content">
+      <!-- Replace src with your actual photo path, e.g. assets/photo.jpg -->
+      <div class="avatar-ring">
+        <div class="avatar-glass">
+          <img
+            src="assets/photo.jpg"
+            alt="Bimanda Yuswandono"
+            class="avatar-img"
+            onerror="this.style.display='none'; this.parentElement.querySelector('.avatar-fallback').style.display='flex';"
+          />
+          <div class="avatar-fallback" style="display:none;">BY</div>
+        </div>
+      </div>
+      <h1 class="hero-name">Bimanda Yuswandono</h1>
+      <p class="hero-role">Marketing &amp; Field Operations Professional</p>
+      <p class="hero-tagline">
+        8+ years turning market data into territory growth — now deepening the analytical edge with SQL, Python &amp; Tableau.
+      </p>
+      <div class="hero-meta">
+        <span>📍 Malang, East Java, Indonesia</span>
+        <span>✉️ <a href="mailto:bimandayusw@gmail.com">bimandayusw@gmail.com</a></span>
+        <span>📞 +62 813 3354 8900</span>
+      </div>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#" class="btn btn-ghost" download>Download CV</a>
+      </div>
+      <div class="hero-social">
+        <a href="https://linkedin.com/in/bimanda-yuswandono" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="https://github.com/yswbimanda" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <main class="main">
+
+    <!-- ── ABOUT ── -->
+    <section class="section" id="about">
+      <div class="section-inner">
+        <p class="section-eyebrow">Who I am</p>
+        <h2 class="section-title">About Me</h2>
+        <div class="glass-card about-card">
+          <p>
+            Commercial and field operations professional with over <strong>8 years of experience</strong> in territory management, trade marketing execution, and market development within highly competitive consumer markets. Throughout my career, I have led territory growth initiatives, integrated marketing programs, and stakeholder collaboration across assigned territories.
+          </p>
+          <p>
+            Consistently achieving approximately <strong>85% of annual performance targets</strong>, I have contributed to territory growth and business performance through effective market execution and development initiatives. Experienced in market and customer analysis, performance management, budgeting, and cross-functional coordination, I combine strong commercial acumen with data-driven problem-solving skills supported by <strong>SQL, Python, and Tableau</strong>.
+          </p>
+          <p>
+            With a results-oriented mindset and strong execution capabilities, I am committed to driving sustainable business growth, operational excellence, and customer-focused solutions.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── EDUCATION ── -->
+    <section class="section" id="education">
+      <div class="section-inner">
+        <p class="section-eyebrow">Academic background</p>
+        <h2 class="section-title">Education</h2>
+        <div class="timeline">
+
+          <div class="timeline-item glass-card">
+            <div class="tl-left">
+              <span class="tl-date">Feb 2026 — Jun 2026</span>
+            </div>
+            <div class="tl-right">
+              <h3 class="tl-title">Full Stack Data Analytics</h3>
+              <p class="tl-org">RevoU</p>
+            </div>
+          </div>
+
+          <div class="timeline-item glass-card">
+            <div class="tl-left">
+              <span class="tl-date">Aug 2008 — Aug 2014</span>
+            </div>
+            <div class="tl-right">
+              <h3 class="tl-title">Bachelor of Accounting</h3>
+              <p class="tl-org">Brawijaya University</p>
+              <p class="tl-detail">GPA 3.27 / 4.00</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── EXPERIENCE ── -->
+    <section class="section" id="experience">
+      <div class="section-inner">
+        <p class="section-eyebrow">Work history</p>
+        <h2 class="section-title">Experience</h2>
+        <div class="glass-card exp-card">
+          <div class="exp-header">
+            <div>
+              <h3 class="exp-title">Branch Promotion Coordinator</h3>
+              <p class="exp-company">PT. Sumbercipta Multiniaga</p>
+            </div>
+            <span class="exp-badge">Oct 2017 — Present</span>
+          </div>
+          <ul class="exp-list">
+            <li>Developed territory growth strategies based on market, competitor, and customer analysis, consistently achieving approximately <strong>85%</strong> of annual performance targets.</li>
+            <li>Led field teams of up to <strong>35 members</strong> and coordinated retail partners, vendors, agencies, and community stakeholders to ensure consistent execution of territory initiatives.</li>
+            <li>Planned, allocated, and monitored <strong>multi-billion IDR</strong> marketing budgets across trade programs, advertising, activations, and branding initiatives to maximize execution effectiveness.</li>
+            <li>Executed consumer activation programs that generated up to <strong>10,000 product trials per month</strong>, strengthening brand visibility and supporting market penetration objectives.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PROJECTS ── -->
+    <section class="section" id="projects">
+      <div class="section-inner">
+        <p class="section-eyebrow">What I've built</p>
+        <h2 class="section-title">Projects</h2>
+        <div class="project-grid">
+
+          <div class="glass-card project-card">
+            <div class="project-header">
+              <div class="project-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 3v18h18"/><path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"/></svg>
+              </div>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Tableau</span>
+                <span class="tag">EDA</span>
+              </div>
+            </div>
+            <h3 class="project-title">Iowa Liquor Sales Analysis</h3>
+            <p class="project-sub">Revenue, Product &amp; Customer Insights</p>
+            <p class="project-desc">
+              Analyzed Iowa Class "E" liquor sales data (B2B transactions for off-premises consumption) across January 2021 – January 2022, diagnosing the drivers behind a severe <strong>34.7% ($14.7M) sales decline</strong> in January 2022.
+            </p>
+
+            <div class="project-detail-block">
+              <p class="project-detail-label">Core Goal</p>
+              <p class="project-detail-text">Identify root causes of the January decline and find optimized regional, category, and price-tier strategies to support a targeted <strong>15% income growth</strong> in 2022 by maximizing excise revenue collection efficiency.</p>
+            </div>
+
+            <div class="project-detail-block">
+              <p class="project-detail-label">Scope of Work</p>
+              <ul class="project-scope">
+                <li>Simplified 48 micro-categories into macro Category Families (Vodka, Whiskey, Rum, etc.).</li>
+                <li>Built custom retail price segments: Budget (≤$9), Value ($10–21), Premium ($22–75), Luxury ($76–285), Ultra Luxury (≥$285).</li>
+                <li>Defined bottle size segments: Small ≤375 ml, Medium, Large, Extra Large &gt;1000 ml.</li>
+                <li>Established benchmark baseline from the stable March–September 2021 period.</li>
+              </ul>
+            </div>
+
+            <div class="project-suggestions">
+              <p class="project-detail-label">Key Suggestions</p>
+              <div class="suggestion-row">
+                <span class="suggestion-badge high">High Priority</span>
+                <p>Monthly variance dashboards for top 5 powerhouse counties (Polk, Linn, Scott, Johnson, Black Hawk).</p>
+              </div>
+              <div class="suggestion-row">
+                <span class="suggestion-badge high">High Priority</span>
+                <p>SKU-level audits within Vodka and Whiskey families to identify lagging labels and deploy targeted trade promotions.</p>
+              </div>
+              <div class="suggestion-row">
+                <span class="suggestion-badge critical">Critical</span>
+                <p>Predictive tracking for Value and Premium price bands to align inventory with consumer demand shifts.</p>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <a href="https://github.com/yswbimanda" target="_blank" rel="noopener" class="project-link">
+                View on GitHub →
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SKILLS ── -->
+    <section class="section" id="skills">
+      <div class="section-inner">
+        <p class="section-eyebrow">What I bring</p>
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+
+          <div class="glass-card skill-card">
+            <div class="skill-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            </div>
+            <h3 class="skill-category">Technical</h3>
+            <ul class="skill-list">
+              <li>Market &amp; Customer Analysis</li>
+              <li>Territory Management</li>
+              <li>Trade Marketing Strategy</li>
+              <li>Campaign Planning &amp; Execution</li>
+              <li>Budget Planning &amp; Monitoring</li>
+              <li>Performance Tracking &amp; KPI Management</li>
+              <li>Data Analysis — SQL, Python, Tableau</li>
+              <li>Dashboard Development &amp; Reporting</li>
+            </ul>
+          </div>
+
+          <div class="glass-card skill-card">
+            <div class="skill-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3 class="skill-category">Soft Skills</h3>
+            <ul class="skill-list">
+              <li>Stakeholder Management</li>
+              <li>Team Leadership</li>
+              <li>Cross-Functional Collaboration</li>
+              <li>Strategic Planning</li>
+              <li>Negotiation &amp; Relationship Building</li>
+              <li>Execution Excellence</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <p>Bimanda Yuswandono · <a href="mailto:bimandayusw@gmail.com">bimandayusw@gmail.com</a> · Malang, East Java</p>
+    <p class="footer-sub">Built with care, hosted on GitHub Pages.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
