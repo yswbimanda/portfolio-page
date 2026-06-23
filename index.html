@@ -6,7 +6,7 @@
   <title>Bimanda Yuswandono — Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -201,6 +201,29 @@
               </div>
             </div>
 
+            <!-- Screenshots — replace src values with your actual file paths -->
+            <div class="screenshots">
+              <p class="project-detail-label">Project Outputs</p>
+              <div class="screenshot-grid">
+                <figure class="screenshot-item" onclick="openLightbox(this)">
+                  <img src="assets/screenshot-01.png" alt="Sales Overview Dashboard" loading="lazy" />
+                  <figcaption>Sales Overview Dashboard</figcaption>
+                </figure>
+                <figure class="screenshot-item" onclick="openLightbox(this)">
+                  <img src="assets/screenshot-02.png" alt="County Revenue Gap Analysis" loading="lazy" />
+                  <figcaption>County Revenue Gap Analysis</figcaption>
+                </figure>
+                <figure class="screenshot-item" onclick="openLightbox(this)">
+                  <img src="assets/screenshot-03.png" alt="Category Family Performance" loading="lazy" />
+                  <figcaption>Category Family Performance</figcaption>
+                </figure>
+                <figure class="screenshot-item" onclick="openLightbox(this)">
+                  <img src="assets/screenshot-04.png" alt="Price Tier Trend Insight" loading="lazy" />
+                  <figcaption>Price Tier Trend Insight</figcaption>
+                </figure>
+              </div>
+            </div>
+
             <div class="project-footer">
               <a href="https://github.com/yswbimanda" target="_blank" rel="noopener" class="project-link">
                 View on GitHub →
@@ -262,6 +285,13 @@
     <p>Bimanda Yuswandono · <a href="mailto:bimandayusw@gmail.com">bimandayusw@gmail.com</a> · Malang, East Java</p>
     <p class="footer-sub">Built with care, hosted on GitHub Pages.</p>
   </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="" />
+    <p class="lightbox-caption" id="lightboxCaption"></p>
+  </div>
 
   <script src="script.js"></script>
 </body>
