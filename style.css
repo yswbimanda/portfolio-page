@@ -690,3 +690,35 @@ strong { color: var(--text); font-weight: 600; }
 @media (max-width: 560px) {
   .screenshot-grid { grid-template-columns: 1fr; }
 }
+
+/* =========================
+   CTA Section
+========================= */
+
+.cta {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.cta-content {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.cta h2 {
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+}
+
+.cta p {
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
