@@ -36,7 +36,7 @@
       <div class="avatar-ring">
         <div class="avatar-glass">
           <img
-            src="assets/photo.jpg"
+            src="assets/photo-1.png"
             alt="Bimanda Yuswandono"
             class="avatar-img"
             onerror="this.style.display='none'; this.parentElement.querySelector('.avatar-fallback').style.display='flex';"
@@ -56,7 +56,7 @@
       </div>
       <div class="hero-buttons">
         <a href="#projects" class="btn btn-primary">View Projects</a>
-        <a href="#" class="btn btn-ghost" download>Download CV</a>
+        <a href="assets/Bimanda-Yuswandono FMCG.pdf" class="btn btn-ghost" download>Download CV</a>
       </div>
       <div class="hero-social">
         <a href="https://linkedin.com/in/bimanda-yuswandono" target="_blank" rel="noopener" aria-label="LinkedIn">
@@ -217,7 +217,7 @@
         <h2 class="section-title">Projects</h2>
         <div class="project-grid">
 
-          <div class="glass-card project-card" onclick="openPanel()">
+          <div class="glass-card project-card" onclick="openPanel('iowa')">
             <div class="project-header">
               <div class="project-icon">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 3v18h18"/><path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"/></svg>
@@ -337,13 +337,6 @@
             <a href="https://drive.google.com/file/d/1MKfEwE2_gWFZ8fLUj1E8XXxbXdRgq_Yz/view?usp=sharing" target="_blank" rel="noopener" class="cert-link">View Certificate →</a>
           </div>
 
-          <div class="glass-card cert-card">
-            <div class="cert-status cert-status--progress">In Progress</div>
-            <h3 class="cert-title">Google Data Analytics Certificate</h3>
-            <p class="cert-org">Google · Coursera</p>
-            <p class="cert-detail">Data cleaning, analysis, visualization, R basics</p>
-          </div>
-
         </div>
       </div>
     </section>
@@ -380,9 +373,9 @@
   </footer>
 
   <!-- ── PROJECT DETAIL PANEL ── -->
-  <div class="panel-overlay" id="panelOverlay" onclick="closePanel()"></div>
-  <div class="panel" id="projectPanel">
-    <button class="panel-close" onclick="closePanel()">✕</button>
+  <div class="panel-overlay" id="overlay-iowa" onclick="closePanel('iowa')"></div>
+  <div class="panel" id="panel-iowa">
+    <button class="panel-close" onclick="closePanel('iowa')">✕</button>
     <div class="panel-inner">
 
       <div class="project-tags" style="margin-bottom:16px;">
