@@ -8,9 +8,7 @@ const observer = new IntersectionObserver(
 revealEls.forEach(el => observer.observe(el));
 
 // Hero visible immediately
-document.querySelectorAll('.hero-content > *').forEach(el => {
-  el.style.opacity = 1;
-});
+document.querySelectorAll('.hero-content > *').forEach(el => { el.style.opacity = 1; });
 
 // ── Nav scroll
 const nav = document.getElementById('nav');
@@ -28,15 +26,15 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// ── Project panel
-function openPanel() {
-  document.getElementById('panelOverlay').classList.add('open');
-  document.getElementById('projectPanel').classList.add('open');
+// ── Panel system (supports multiple projects)
+function openPanel(id) {
+  document.getElementById('overlay-' + id).classList.add('open');
+  document.getElementById('panel-' + id).classList.add('open');
   document.body.style.overflow = 'hidden';
 }
-function closePanel() {
-  document.getElementById('panelOverlay').classList.remove('open');
-  document.getElementById('projectPanel').classList.remove('open');
+function closePanel(id) {
+  document.getElementById('overlay-' + id).classList.remove('open');
+  document.getElementById('panel-' + id).classList.remove('open');
   document.body.style.overflow = '';
 }
 
@@ -55,7 +53,11 @@ function closeLightbox() {
   document.body.style.overflow = '';
 }
 
-// ── Keyboard close
+// ── Keyboard close — closes any open panel or lightbox
 document.addEventListener('keydown', e => {
-  if (e.key === 'Escape') { closeLightbox(); closePanel(); }
+  if (e.key !== 'Escape') return;
+  closeLightbox();
+  document.querySelectorAll('.panel.open').forEach(panel => {
+    closePanel(panel.id.replace('panel-', ''));
+  });
 });
