@@ -322,3 +322,12 @@ strong { color: var(--text); font-weight: 600; }
   .reveal { opacity: 1; transform: none; transition: none; }
   .panel { transition: none; }
 }
+
+.project-disclaimer {
+  font-size: 12px;
+  color: var(--text-faint);
+  border-left: 2px solid var(--glass-border);
+  padding: 8px 14px;
+  line-height: 1.6;
+  font-style: italic;
+}
