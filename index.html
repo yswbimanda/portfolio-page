@@ -251,7 +251,80 @@
               <span>View Full Analysis →</span>
             </div>
           </div>
-
+          
+<!-- ── PROJECT CARD 2: QuickU ── -->
+<div class="glass-card project-card" onclick="openPanel('quicku')">
+  <div class="project-header">
+    <div class="project-icon">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M8 12h8M12 8l4 4-4 4"/></svg>
+    </div>
+    <div class="project-tags">
+      <span class="tag">Python</span>
+      <span class="tag">RFM</span>
+      <span class="tag">K-Means</span>
+      <span class="tag">Segmentation</span>
+    </div>
+  </div>
+  <h3 class="project-title">QuickU Q-Commerce Analysis</h3>
+  <p class="project-sub">Customer Segmentation & Retention Strategy</p>
+  <p class="project-desc">
+    Analyzed 8,700 paying customers generating <strong>3.2B IDR</strong> in revenue for QuickU, a hyperlocal Q-Commerce platform. Used RFM scoring and K-Means clustering to identify five customer segments and diagnosed why <strong>338.5M IDR</strong> in high-value revenue was going inactive.
+  </p>
+  <div class="screenshot-grid preview-grid">
+    <figure class="screenshot-item">
+      <img src="assets/quicku-01.png" alt="Customer Segment Overview" loading="lazy" />
+    </figure>
+    <figure class="screenshot-item">
+      <img src="assets/quicku-02.png" alt="Revenue Concentration" loading="lazy" />
+    </figure>
+    <figure class="screenshot-item">
+      <img src="assets/quicku-03.png" alt="At-Risk Segment Analysis" loading="lazy" />
+    </figure>
+    <figure class="screenshot-item">
+      <img src="assets/quicku-04.png" alt="Category Affinity by Segment" loading="lazy" />
+    </figure>
+  </div>
+  <div class="project-card-cta">
+    <span>View Full Analysis →</span>
+  </div>
+</div>
+ 
+<!-- ── PROJECT CARD 3: RevoFin ── -->
+<div class="glass-card project-card" onclick="openPanel('revofin')">
+  <div class="project-header">
+    <div class="project-icon">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
+    </div>
+    <div class="project-tags">
+      <span class="tag">SQL</span>
+      <span class="tag">BigQuery</span>
+      <span class="tag">Tableau</span>
+      <span class="tag">Risk Analytics</span>
+    </div>
+  </div>
+  <h3 class="project-title">RevoFin Loan Portfolio Analysis</h3>
+  <p class="project-sub">Risk Management & Executive Briefing</p>
+  <p class="project-desc">
+    Analyzed a <strong>$2.80B outstanding loan portfolio</strong> of 176,087 customers for RevoFin Fintech's Risk Management and Executive team — diagnosing what drove a steady TKB30 improvement from <strong>96.25% to 98.83%</strong> across origination cohorts from 2012 to 2019.
+  </p>
+  <div class="screenshot-grid preview-grid">
+    <figure class="screenshot-item">
+      <img src="assets/revofin-01.png" alt="Portfolio Health Dashboard" loading="lazy" />
+    </figure>
+    <figure class="screenshot-item">
+      <img src="assets/revofin-02.png" alt="TKB30 Trend by Cohort" loading="lazy" />
+    </figure>
+    <figure class="screenshot-item">
+      <img src="assets/revofin-03.png" alt="Credit Grade Mix" loading="lazy" />
+    </figure>
+    <figure class="screenshot-item">
+      <img src="assets/revofin-04.png" alt="Within-Grade Quality Improvement" loading="lazy" />
+    </figure>
+  </div>
+  <div class="project-card-cta">
+    <span>View Full Analysis →</span>
+  </div>
+</div>
         </div>
       </div>
     </section>
@@ -491,7 +564,241 @@
 
     </div>
   </div>
-
+<!-- ── PANEL: QuickU ── -->
+<div class="panel-overlay" id="overlay-quicku" onclick="closePanel('quicku')"></div>
+<div class="panel" id="panel-quicku">
+  <button class="panel-close" onclick="closePanel('quicku')">✕</button>
+  <div class="panel-inner">
+ 
+    <div class="project-tags" style="margin-bottom:16px;">
+      <span class="tag">Python</span>
+      <span class="tag">RFM</span>
+      <span class="tag">K-Means</span>
+      <span class="tag">Segmentation</span>
+    </div>
+ 
+    <h2 class="panel-title">QuickU Q-Commerce Analysis</h2>
+    <p class="panel-sub">Customer Segmentation & Retention Strategy · Aug 2026</p>
+ 
+    <div class="project-case">
+      <p>
+        QuickU operates in hyperlocal Q-Commerce where fulfillment cost per order is structurally high — making customer lifetime value the primary profitability lever, not acquisition volume. With new registrations declining from <strong>1,128 in Q1 2021 to 376 in Q4 2022</strong> and no systematic segmentation framework in place, marketing spend was being distributed uniformly across customers who generated wildly different revenue. This project built a customer intelligence foundation using RFM scoring and K-Means clustering to identify five behavioral segments, diagnose why high-value revenue was going inactive, and prioritize the retention and conversion interventions with the highest commercial impact.
+      </p>
+    </div>
+ 
+    <p class="project-detail-label" style="margin-top:24px;">What the data showed</p>
+    <div class="finding-grid">
+      <div class="finding-item">
+        <span class="finding-num">16%</span>
+        <span class="finding-label">of customers drive 52.7% of total revenue</span>
+      </div>
+      <div class="finding-item">
+        <span class="finding-num">338.5M</span>
+        <span class="finding-label">IDR in inactive high-value revenue at risk</span>
+      </div>
+      <div class="finding-item">
+        <span class="finding-num">91.1%</span>
+        <span class="finding-label">of At-Risk customers' last transaction was canceled</span>
+      </div>
+      <div class="finding-item">
+        <span class="finding-num">32%</span>
+        <span class="finding-label">of customers are New/One-Time — only 7.8% of revenue</span>
+      </div>
+    </div>
+ 
+    <p class="project-detail-label" style="margin-top:28px;">Project Outputs</p>
+ 
+    <div class="panel-chart">
+      <figure class="panel-chart-img" onclick="openLightbox(this)">
+        <img src="assets/quicku-01.png" alt="Customer Segment Overview" />
+        <figcaption>Customer Segment Overview</figcaption>
+      </figure>
+      <div class="panel-chart-text">
+        <h4>Customer Segment Overview</h4>
+        <p>Five distinct customer segments emerged from the RFM + K-Means model: Champions, At-Risk High Value, Loyal/Regular, Lapsed Low-Value, and New/One-Time. The scatter plot shows how each segment clusters differently by recency and monetary value — confirming the segmentation is behaviourally meaningful, not arbitrary grouping.</p>
+      </div>
+    </div>
+ 
+    <div class="panel-chart">
+      <figure class="panel-chart-img" onclick="openLightbox(this)">
+        <img src="assets/quicku-02.png" alt="Revenue Concentration" />
+        <figcaption>Revenue Concentration by Segment</figcaption>
+      </figure>
+      <div class="panel-chart-text">
+        <h4>Revenue Concentration by Segment</h4>
+        <p>Champions represent only 15.8% of customers but generate 52.7% of revenue — a concentration ratio that makes retention of this segment the single most important commercial priority. The New/One-Time segment is the mirror image: 32.2% of customers, only 7.8% of revenue. Converting even a fraction of them to repeat buyers is the largest scalable growth lever available.</p>
+      </div>
+    </div>
+ 
+    <div class="panel-chart">
+      <figure class="panel-chart-img" onclick="openLightbox(this)">
+        <img src="assets/quicku-03.png" alt="At-Risk Segment Deep Dive" />
+        <figcaption>At-Risk Segment — Cancellation Analysis</figcaption>
+      </figure>
+      <div class="panel-chart-text">
+        <h4>At-Risk Segment — Cancellation Analysis</h4>
+        <p>At-Risk High Value customers show a 36.2% personal cancellation rate versus 8.7% for Champions — and 91.1% of them had their very last transaction attempt end in cancellation. This is not a marketing problem. It points to a checkout or fulfillment experience failure that is driving away the platform's most historically valuable customers before retention campaigns can even reach them.</p>
+      </div>
+    </div>
+ 
+    <div class="panel-chart">
+      <figure class="panel-chart-img" onclick="openLightbox(this)">
+        <img src="assets/quicku-04.png" alt="Category Affinity by Segment" />
+        <figcaption>Category Affinity by Segment</figcaption>
+      </figure>
+      <div class="panel-chart-text">
+        <h4>Category Affinity by Segment</h4>
+        <p>The category affinity heatmap shows what each segment over- and under-indexes on relative to the overall spend mix. Champions skew toward Daging Beku and Unggas while New/One-Time customers over-index heavily on Bumbu Dapur — directly actionable for targeted cross-sell and first-reorder campaigns calibrated to each segment's actual purchasing behavior.</p>
+      </div>
+    </div>
+ 
+    <p class="project-detail-label" style="margin-top:28px;">Recommendations</p>
+    <div class="project-suggestions">
+      <div class="suggestion-row">
+        <span class="suggestion-badge critical">Critical</span>
+        <p>Fix the checkout and fulfillment experience first — 91.1% last-transaction cancellation in the At-Risk segment signals an experience failure, not a marketing gap. Win-back campaigns will fail until this is resolved.</p>
+      </div>
+      <div class="suggestion-row">
+        <span class="suggestion-badge high">High Priority</span>
+        <p>Drive second purchases from New/One-Time customers through personalized reorder reminders and first-repeat incentives — this is the highest-volume conversion opportunity in the base.</p>
+      </div>
+      <div class="suggestion-row">
+        <span class="suggestion-badge high">High Priority</span>
+        <p>Protect Champions with loyalty benefits and early access — not discounts. At 52.7% of revenue from 15.8% of customers, unnecessary discounting here destroys margin without adding retention value.</p>
+      </div>
+    </div>
+ 
+    <div class="project-footer" style="margin-top:28px;">
+      <a href="YOUR_QUICKU_TABLEAU_URL_HERE" target="_blank" rel="noopener" class="project-link project-link-tableau">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-2px;margin-right:6px"><rect x="10.5" y="1" width="3" height="5"/><rect x="10.5" y="18" width="3" height="5"/><rect x="1" y="10.5" width="5" height="3"/><rect x="18" y="10.5" width="5" height="3"/><rect x="16.5" y="3.5" width="3" height="3"/><rect x="4.5" y="17.5" width="3" height="3"/><rect x="3.5" y="3.5" width="3" height="3"/><rect x="17.5" y="17.5" width="3" height="3"/><rect x="9" y="9" width="6" height="6"/></svg>
+        View Dashboard on Tableau Public
+      </a>
+      <a href="YOUR_QUICKU_GITHUB_URL_HERE" target="_blank" rel="noopener" class="project-link project-link-github">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-2px;margin-right:6px"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+        View Code on GitHub
+      </a>
+    </div>
+ 
+  </div>
+</div>
+ 
+<!-- ── PANEL: RevoFin ── -->
+<div class="panel-overlay" id="overlay-revofin" onclick="closePanel('revofin')"></div>
+<div class="panel" id="panel-revofin">
+  <button class="panel-close" onclick="closePanel('revofin')">✕</button>
+  <div class="panel-inner">
+ 
+    <div class="project-tags" style="margin-bottom:16px;">
+      <span class="tag">SQL</span>
+      <span class="tag">BigQuery</span>
+      <span class="tag">Tableau</span>
+      <span class="tag">Risk Analytics</span>
+    </div>
+ 
+    <h2 class="panel-title">RevoFin Loan Portfolio Analysis</h2>
+    <p class="panel-sub">Risk Management & Executive Briefing · Aug 2026</p>
+ 
+    <div class="project-case">
+      <p>
+        RevoFin's profitability depends on the spread between interest earned and credit losses — making TKB30 (the share of the portfolio not in late delinquency) a direct driver of business performance. With a <strong>$2.80B outstanding portfolio</strong> across 176,087 customers growing nearly 10× from 2012 to 2019, the Risk Management and Executive team needed to understand what was driving a steady credit quality improvement — and how to sustain it as the book continued scaling. This analysis diagnosed the two independent mechanisms behind the TKB30 improvement and translated them into concrete underwriting policy recommendations.
+      </p>
+    </div>
+ 
+    <p class="project-detail-label" style="margin-top:24px;">What the data showed</p>
+    <div class="finding-grid">
+      <div class="finding-item">
+        <span class="finding-num">98.11%</span>
+        <span class="finding-label">overall portfolio TKB30 — healthy baseline</span>
+      </div>
+      <div class="finding-item">
+        <span class="finding-num">+2.58pts</span>
+        <span class="finding-label">TKB30 improvement from 2012 to 2019</span>
+      </div>
+      <div class="finding-item">
+        <span class="finding-num">2×</span>
+        <span class="finding-label">A-grade share doubled (13% → 29.6%) across cohorts</span>
+      </div>
+      <div class="finding-item">
+        <span class="finding-num">96.7%</span>
+        <span class="finding-label">of outstanding balance in Current status</span>
+      </div>
+    </div>
+ 
+    <p class="project-detail-label" style="margin-top:28px;">Project Outputs</p>
+ 
+    <div class="panel-chart">
+      <figure class="panel-chart-img" onclick="openLightbox(this)">
+        <img src="assets/revofin-01.png" alt="Portfolio Health Dashboard" />
+        <figcaption>Portfolio Health Dashboard</figcaption>
+      </figure>
+      <div class="panel-chart-text">
+        <h4>Portfolio Health Dashboard</h4>
+        <p>The Tableau dashboard consolidates the four critical portfolio health metrics in one view: total customers, TKB30, outstanding balance (OS), and earning receivables (ENR). The loan status breakdown confirms the portfolio is fundamentally healthy today — 96.7% of OS sits in Current status, with only 1.9% in the TKB30 risk bucket. The analysis that follows is about protecting this position as the book scales, not correcting a crisis.</p>
+      </div>
+    </div>
+ 
+    <div class="panel-chart">
+      <figure class="panel-chart-img" onclick="openLightbox(this)">
+        <img src="assets/revofin-02.png" alt="TKB30 Trend by Origination Year" />
+        <figcaption>TKB30 Trend by Origination Year</figcaption>
+      </figure>
+      <div class="panel-chart-text">
+        <h4>TKB30 Trend by Origination Year</h4>
+        <p>TKB30 improved from 96.25% in 2012 to 98.83% in 2019 — a +2.58 point gain across cohorts that grew origination volume by nearly 10×. The improvement is not incidental to growth; it happened alongside scale, indicating a deliberate and repeatable quality improvement, not luck. The dip in 2017 is isolated and recovers strongly in 2018–2019.</p>
+      </div>
+    </div>
+ 
+    <div class="panel-chart">
+      <figure class="panel-chart-img" onclick="openLightbox(this)">
+        <img src="assets/revofin-03.png" alt="Credit Grade Mix by Cohort" />
+        <figcaption>Credit Grade Mix by Cohort</figcaption>
+      </figure>
+      <div class="panel-chart-text">
+        <h4>Credit Grade Mix by Cohort</h4>
+        <p>A-grade origination share more than doubled from 13.0% to 29.6% while combined E–G share fell from 13.6% to 2.5% across Early to Recent cohorts. This deliberate reallocation toward safer credit grades is the single largest identified lever behind the portfolio's TKB30 improvement — and the most directly controllable underwriting decision available to Risk Management going forward.</p>
+      </div>
+    </div>
+ 
+    <div class="panel-chart">
+      <figure class="panel-chart-img" onclick="openLightbox(this)">
+        <img src="assets/revofin-04.png" alt="Within-Grade Quality Improvement" />
+        <figcaption>Within-Grade Quality Improvement</figcaption>
+      </figure>
+      <div class="panel-chart-text">
+        <h4>Within-Grade Quality Improvement</h4>
+        <p>Controlling for grade mix reveals a second, independent improvement: TKB30 rose within every grade across cohorts (e.g., Grade A: 98.35% → 99.67%; Grade C: 96.81% → 98.32%). If the improvement were purely a mix shift, within-grade TKB30 would stay flat. It doesn't — indicating that underwriting or scoring accuracy itself improved between cohorts, compounding the benefit of the grade reallocation decision.</p>
+      </div>
+    </div>
+ 
+    <p class="project-detail-label" style="margin-top:28px;">Recommendations</p>
+    <div class="project-suggestions">
+      <div class="suggestion-row">
+        <span class="suggestion-badge critical">Critical</span>
+        <p>Formalize the A/B-grade-weighted origination strategy — set a minimum combined Grade A/B target (≥55%) and monitor it monthly alongside TKB30. This is the largest identified lever and lowest-cost to implement.</p>
+      </div>
+      <div class="suggestion-row">
+        <span class="suggestion-badge high">High Priority</span>
+        <p>Commission an underwriting audit comparing Early vs. Recent cohort criteria within each grade to identify and formalize what improved within-grade performance — then replicate it to weaker grades.</p>
+      </div>
+      <div class="suggestion-row">
+        <span class="suggestion-badge high">High Priority</span>
+        <p>Introduce stricter income and DTI thresholds for 60-month loan applications — the 60-month term share fell from 50.5% to 32% alongside TKB30 gains; formalizing controls here protects against reversion as volume grows.</p>
+      </div>
+    </div>
+ 
+    <div class="project-footer" style="margin-top:28px;">
+      <a href="YOUR_REVOFIN_TABLEAU_URL_HERE" target="_blank" rel="noopener" class="project-link project-link-tableau">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-2px;margin-right:6px"><rect x="10.5" y="1" width="3" height="5"/><rect x="10.5" y="18" width="3" height="5"/><rect x="1" y="10.5" width="5" height="3"/><rect x="18" y="10.5" width="5" height="3"/><rect x="16.5" y="3.5" width="3" height="3"/><rect x="4.5" y="17.5" width="3" height="3"/><rect x="3.5" y="3.5" width="3" height="3"/><rect x="17.5" y="17.5" width="3" height="3"/><rect x="9" y="9" width="6" height="6"/></svg>
+        View Dashboard on Tableau Public
+      </a>
+      <a href="YOUR_REVOFIN_GITHUB_URL_HERE" target="_blank" rel="noopener" class="project-link project-link-github">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-2px;margin-right:6px"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+        View Code on GitHub
+      </a>
+    </div>
+ 
+  </div>
+</div>
   <!-- Lightbox -->
   <div class="lightbox" id="lightbox" onclick="closeLightbox()">
     <button class="lightbox-close" onclick="closeLightbox()">✕</button>
