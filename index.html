@@ -325,6 +325,80 @@
     <span>View Full Analysis →</span>
   </div>
 </div>
+
+<!-- ── PROJECT CARD 4: Telkom Dashboard ── -->
+<div class="glass-card project-card" onclick="openPanel('telkom-dash')">
+  <div class="project-header">
+    <div class="project-icon">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><path d="M6 8h4M6 11h4M14 8h4"/></svg>
+    </div>
+    <div class="project-tags">
+      <span class="tag">Python</span>
+      <span class="tag">Tableau</span>
+      <span class="tag">K-Means</span>
+      <span class="tag">EDA</span>
+    </div>
+  </div>
+  <h3 class="project-title">Telkom Residential Broadband</h3>
+  <p class="project-sub">Customer &amp; Revenue Performance Dashboard</p>
+  <p class="project-desc">
+    Analyzed <strong>18,000 active customers</strong> across 27 districts generating <strong>Rp 4.68B MRR</strong> for Telkom Indonesia — diagnosing a 7.2% churn rate driven by payment behavior, network infrastructure gaps, and contract structure, and delivering a 5-page interactive dashboard for executive and operational stakeholders.
+  </p>
+  <div class="screenshot-grid preview-grid">
+    <figure class="screenshot-item">
+      <img src="assets/telkom-dash-01.png" alt="Executive Overview Dashboard" loading="lazy" />
+    </figure>
+    <figure class="screenshot-item">
+      <img src="assets/telkom-dash-02.png" alt="Revenue Performance" loading="lazy" />
+    </figure>
+    <figure class="screenshot-item">
+      <img src="assets/telkom-dash-03.png" alt="Regional Operations" loading="lazy" />
+    </figure>
+    <figure class="screenshot-item">
+      <img src="assets/telkom-dash-04.png" alt="Churn & Segmentation Analysis" loading="lazy" />
+    </figure>
+  </div>
+  <div class="project-card-cta">
+    <span>View Full Analysis →</span>
+  </div>
+</div>
+ 
+<!-- ── PROJECT CARD 5: Telkom Churn ML ── -->
+<div class="glass-card project-card" onclick="openPanel('telkom-ml')">
+  <div class="project-header">
+    <div class="project-icon">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+    </div>
+    <div class="project-tags">
+      <span class="tag">Python</span>
+      <span class="tag">XGBoost</span>
+      <span class="tag">SHAP</span>
+      <span class="tag">Machine Learning</span>
+    </div>
+  </div>
+  <h3 class="project-title">Telkom Residential Broadband</h3>
+  <p class="project-sub">Customer Churn Prediction Model</p>
+  <p class="project-desc">
+    Built a churn prediction model across <strong>20,000 labeled customers</strong> for Telkom Indonesia — evaluating 4 machine learning algorithms, achieving a cross-validated ROC-AUC of <strong>0.9794 with XGBoost</strong>, and translating predictions into a revenue-weighted retention prioritization framework capturing <strong>Rp145.7M</strong> in monthly revenue exposure.
+  </p>
+  <div class="screenshot-grid preview-grid">
+    <figure class="screenshot-item">
+      <img src="assets/telkom-ml-01.png" alt="Model Performance Comparison" loading="lazy" />
+    </figure>
+    <figure class="screenshot-item">
+      <img src="assets/telkom-ml-02.png" alt="SHAP Feature Importance" loading="lazy" />
+    </figure>
+    <figure class="screenshot-item">
+      <img src="assets/telkom-ml-03.png" alt="Customer Prioritization Matrix" loading="lazy" />
+    </figure>
+    <figure class="screenshot-item">
+      <img src="assets/telkom-ml-04.png" alt="Retention Framework" loading="lazy" />
+    </figure>
+  </div>
+  <div class="project-card-cta">
+    <span>View Full Analysis →</span>
+  </div>
+</div>
         </div>
       </div>
     </section>
@@ -812,6 +886,253 @@
  
   </div>
 </div>
+
+<!-- ── PANEL: Telkom Dashboard ── -->
+<div class="panel-overlay" id="overlay-telkom-dash" onclick="closePanel('telkom-dash')"></div>
+<div class="panel" id="panel-telkom-dash">
+  <button class="panel-close" onclick="closePanel('telkom-dash')">✕</button>
+  <div class="panel-inner">
+ 
+    <div class="project-tags" style="margin-bottom:16px;">
+      <span class="tag">Python</span>
+      <span class="tag">Tableau</span>
+      <span class="tag">K-Means</span>
+      <span class="tag">EDA</span>
+    </div>
+ 
+    <h2 class="panel-title">Telkom Residential Broadband</h2>
+    <p class="panel-sub">Customer &amp; Revenue Performance Dashboard · Sept 2026</p>
+ 
+    <!-- Disclaimer -->
+    <p class="project-disclaimer">
+      This project is a virtual internship supervised by RevoU and Telkom, focused on transforming fragmented operational data into an interactive dashboard that enables holistic monitoring of customer, revenue, network performance, customer experience, and retention. It develops skills in analyzing business data, identifying performance trends and customer patterns, building decision-support dashboards, and delivering actionable insights for business stakeholders. The data used is a representation of original data adjusted for educational purposes and does not reflect actual business conditions.
+    </p>
+ 
+    <div class="project-case">
+      <p>
+        Telkom's residential fiber business scaled rapidly from 1,200 to <strong>18,000 active customers</strong> in 18 months, generating Rp 4.68B in monthly recurring revenue — but management relied on separate operational reports across billing, network operations, and customer care with no single connected view. The same 7.2% churn rate costs more in absolute terms every month growth continues unaddressed. This project built the analytical foundation and interactive dashboard to connect customer growth, revenue, network health, customer experience, and retention in one continuously updated view across all 27 districts.
+      </p>
+    </div>
+ 
+    <p class="project-detail-label" style="margin-top:24px;">What the data showed</p>
+    <div class="finding-grid">
+      <div class="finding-item">
+        <span class="finding-num">13.7×</span>
+        <span class="finding-label">higher churn for LATE vs EARLY/NORMAL payment persona</span>
+      </div>
+      <div class="finding-item">
+        <span class="finding-num">5.1×</span>
+        <span class="finding-label">higher churn in Tier D vs Tier A districts</span>
+      </div>
+      <div class="finding-item">
+        <span class="finding-num">27.14%</span>
+        <span class="finding-label">churn rate for High-Risk Late Payers segment</span>
+      </div>
+      <div class="finding-item">
+        <span class="finding-num">Rp2.62B</span>
+        <span class="finding-label">in collected revenue invisible in official MRR</span>
+      </div>
+    </div>
+ 
+    <p class="project-detail-label" style="margin-top:28px;">Project Outputs</p>
+ 
+    <div class="panel-chart">
+      <figure class="panel-chart-img" onclick="openLightbox(this)">
+        <img src="assets/telkom-dash-01.png" alt="Executive Overview Dashboard" />
+        <figcaption>Executive Overview Dashboard</figcaption>
+      </figure>
+      <div class="panel-chart-text">
+        <h4>Executive Overview Dashboard</h4>
+        <p>The executive view consolidates the four headline metrics — active customers, MRR, churn rate, and ARPU — alongside growth trend and retention health indicators. Active base grew from 1,200 to 18,000 in 18 months with Rp 4.68B MRR, but the 7.2% churn rate increasingly costs more in absolute revenue as the base scales. This page gives leadership a single, continuously updated view of whether the business is growing and how healthy retention actually is.</p>
+      </div>
+    </div>
+ 
+    <div class="panel-chart">
+      <figure class="panel-chart-img" onclick="openLightbox(this)">
+        <img src="assets/telkom-dash-02.png" alt="Revenue Performance" />
+        <figcaption>Revenue Performance</figcaption>
+      </figure>
+      <div class="panel-chart-text">
+        <h4>Revenue Performance</h4>
+        <p>Revenue is volume-driven, not premium-driven — the entry-level 50 Mbps package generates the most total revenue despite the lowest per-unit fee, confirming growth is coming from subscriber count rather than upsell. Ciracas leads all districts in revenue contribution. A data-quality issue affecting 618 Unknown-status customers understates the true cash position by approximately 4.7% — Rp 2.62B in collected payments is currently invisible in official MRR reporting.</p>
+      </div>
+    </div>
+ 
+    <div class="panel-chart">
+      <figure class="panel-chart-img" onclick="openLightbox(this)">
+        <img src="assets/telkom-dash-03.png" alt="Regional Operations" />
+        <figcaption>Regional Operations</figcaption>
+      </figure>
+      <div class="panel-chart-text">
+        <h4>Regional Operations</h4>
+        <p>Five districts — Cakung, Penjaringan, Cilincing, Koja, and Kepulauan Seribu Utara — sit below a quality score of 80 with over 6 hours of monthly downtime. Tier D districts churn 5.1 times more than Tier A, tracking directly with network quality degradation and complaint volume. The regional view identifies exactly where infrastructure investment and retention resources should be concentrated, prioritizing districts with both high revenue contribution and high churn risk.</p>
+      </div>
+    </div>
+ 
+    <div class="panel-chart">
+      <figure class="panel-chart-img" onclick="openLightbox(this)">
+        <img src="assets/telkom-dash-04.png" alt="Churn and Segmentation Analysis" />
+        <figcaption>Churn &amp; Segmentation Analysis</figcaption>
+      </figure>
+      <div class="panel-chart-text">
+        <h4>Churn &amp; Segmentation Analysis</h4>
+        <p>K-Means segmentation revealed four behavioral groups: Stable Core (7,825 customers, Rp 18.18B revenue, 0.92% churn), High-Risk Late Payers (3,058 customers, 27.14% churn), Network-Frustrated, and High-Value Power Users. Segment size and risk move in opposite directions — the riskiest group is the smallest, but protecting Stable Core's experience is equally critical given their outsized revenue contribution. Intermittent connection and slow internet account for 65% of all complaint tickets, concentrated in the same underperforming districts.</p>
+      </div>
+    </div>
+ 
+    <p class="project-detail-label" style="margin-top:28px;">Recommendations</p>
+    <div class="project-suggestions">
+      <div class="suggestion-row">
+        <span class="suggestion-badge critical">Critical</span>
+        <p>Pilot a payment-triggered retention workflow using churn score as an early warning mechanism for LATE-persona customers — intervening before cancellation intent forms rather than after the decision is made.</p>
+      </div>
+      <div class="suggestion-row">
+        <span class="suggestion-badge high">High Priority</span>
+        <p>Commission a network audit and phased infrastructure upgrade in the 5 worst-performing districts where high revenue concentration and high churn risk overlap directly.</p>
+      </div>
+      <div class="suggestion-row">
+        <span class="suggestion-badge high">High Priority</span>
+        <p>Audit the churn-recording process to recover Rp 2.62B in collected payments currently invisible in official MRR — understating the true cash position by approximately 4.7%.</p>
+      </div>
+    </div>
+ 
+    <div class="project-footer" style="margin-top:28px;">
+      <a href="YOUR_TELKOM_DASH_TABLEAU_URL_HERE" target="_blank" rel="noopener" class="project-link project-link-tableau">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-2px;margin-right:6px"><rect x="10.5" y="1" width="3" height="5"/><rect x="10.5" y="18" width="3" height="5"/><rect x="1" y="10.5" width="5" height="3"/><rect x="18" y="10.5" width="5" height="3"/><rect x="16.5" y="3.5" width="3" height="3"/><rect x="4.5" y="17.5" width="3" height="3"/><rect x="3.5" y="3.5" width="3" height="3"/><rect x="17.5" y="17.5" width="3" height="3"/><rect x="9" y="9" width="6" height="6"/></svg>
+        View Dashboard on Tableau Public
+      </a>
+      <a href="YOUR_TELKOM_DASH_GITHUB_URL_HERE" target="_blank" rel="noopener" class="project-link project-link-github">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-2px;margin-right:6px"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+        View Code on GitHub
+      </a>
+    </div>
+ 
+  </div>
+</div>
+ 
+<!-- ── PANEL: Telkom Churn ML ── -->
+<div class="panel-overlay" id="overlay-telkom-ml" onclick="closePanel('telkom-ml')"></div>
+<div class="panel" id="panel-telkom-ml">
+  <button class="panel-close" onclick="closePanel('telkom-ml')">✕</button>
+  <div class="panel-inner">
+ 
+    <div class="project-tags" style="margin-bottom:16px;">
+      <span class="tag">Python</span>
+      <span class="tag">XGBoost</span>
+      <span class="tag">SHAP</span>
+      <span class="tag">Machine Learning</span>
+    </div>
+ 
+    <h2 class="panel-title">Telkom Residential Broadband</h2>
+    <p class="panel-sub">Customer Churn Prediction Model · Sept 2026</p>
+ 
+    <!-- Disclaimer -->
+    <p class="project-disclaimer">
+      This project is a virtual internship supervised by RevoU and Telkom, focused on applying machine learning to proactively identify customers at risk of churn and support data-driven retention strategies. It develops expertise in transforming customer data into predictive insights through an end-to-end machine learning workflow — including exploratory data analysis, feature engineering, model development and optimization, evaluation, explainability, and translating model results into actionable business recommendations. The data used is a representation of original data adjusted for educational purposes and does not reflect actual business conditions.
+    </p>
+ 
+    <div class="project-case">
+      <p>
+        Telkom's retention activity only begins after a customer submits a cancellation request — by then, the decision to leave has usually already been made. With <strong>2,000 of 20,000 customers churned</strong> and the cost of acquiring a new customer far exceeding the cost of retaining an existing one, the business needed a proactive system that scores every active customer for churn risk before they file a cancellation. This project built that system: evaluating 4 predictive models, identifying the strongest churn signals through SHAP explainability, and translating predictions into a revenue-weighted prioritization framework that tells the retention team exactly who to contact, why they are at risk, and what action to take.
+      </p>
+    </div>
+ 
+    <p class="project-detail-label" style="margin-top:24px;">What the data showed</p>
+    <div class="finding-grid">
+      <div class="finding-item">
+        <span class="finding-num">0.9794</span>
+        <span class="finding-label">XGBoost cross-validated ROC-AUC — best among 4 models</span>
+      </div>
+      <div class="finding-item">
+        <span class="finding-num">79.46%</span>
+        <span class="finding-label">of expected monthly revenue at risk captured by the model</span>
+      </div>
+      <div class="finding-item">
+        <span class="finding-num">Rp145.7M</span>
+        <span class="finding-label">monthly revenue exposure in the priority retention group</span>
+      </div>
+      <div class="finding-item">
+        <span class="finding-num">53</span>
+        <span class="finding-label">features selected from 79 engineered, from 30 raw variables</span>
+      </div>
+    </div>
+ 
+    <p class="project-detail-label" style="margin-top:28px;">Project Outputs</p>
+ 
+    <div class="panel-chart">
+      <figure class="panel-chart-img" onclick="openLightbox(this)">
+        <img src="assets/telkom-ml-01.png" alt="Model Performance Comparison" />
+        <figcaption>Model Performance Comparison</figcaption>
+      </figure>
+      <div class="panel-chart-text">
+        <h4>Model Performance Comparison</h4>
+        <p>Four algorithms were evaluated across 20,000 labeled customers: Logistic Regression (0.9762), Random Forest (0.9761), XGBoost (0.9794), and XGBoost with In-Context features (0.9769). XGBoost achieved the highest cross-validated ROC-AUC, narrowly outperforming the others. The results confirm XGBoost as the strongest predictive approach and the foundation for the retention prioritization framework.</p>
+      </div>
+    </div>
+ 
+    <div class="panel-chart">
+      <figure class="panel-chart-img" onclick="openLightbox(this)">
+        <img src="assets/telkom-ml-02.png" alt="SHAP Feature Importance" />
+        <figcaption>SHAP Feature Importance</figcaption>
+      </figure>
+      <div class="panel-chart-text">
+        <h4>SHAP Feature Importance</h4>
+        <p>SHAP analysis identified service quality (avg_quality_3m) and customer engagement (avg_active_days_3m) as the two strongest churn signals, followed by complaint frequency relative to tenure, usage ratio, and late-payment behavior. This moves the analysis beyond a ranked feature list — it explains exactly why the model flagged a specific customer, enabling retention teams to match the intervention to the actual driver rather than applying a generic campaign.</p>
+      </div>
+    </div>
+ 
+    <div class="panel-chart">
+      <figure class="panel-chart-img" onclick="openLightbox(this)">
+        <img src="assets/telkom-ml-03.png" alt="Customer Prioritization Matrix" />
+        <figcaption>Customer Prioritization Matrix — Risk × Value</figcaption>
+      </figure>
+      <div class="panel-chart-text">
+        <h4>Customer Prioritization Matrix</h4>
+        <p>Combining churn probability with monthly fee produces a Risk × Value matrix that segments customers into four retention zones: Priority Retention (high risk, high value), Standard Retention, Protect, and Monitor. The 22.35% churn-probability threshold was selected to capture 79.46% of expected monthly revenue at risk while targeting only 21.98% of customers — concentrating resources where financial exposure is greatest rather than spreading effort across the entire base.</p>
+      </div>
+    </div>
+ 
+    <div class="panel-chart">
+      <figure class="panel-chart-img" onclick="openLightbox(this)">
+        <img src="assets/telkom-ml-04.png" alt="Proactive Retention Framework" />
+        <figcaption>Proactive Retention Framework</figcaption>
+      </figure>
+      <div class="panel-chart-text">
+        <h4>Proactive Retention Framework</h4>
+        <p>The model output feeds a recurring operational workflow: score every active customer monthly, flag those above the 22.35% threshold, use SHAP to diagnose the primary driver for each flagged customer, route the case to the team best positioned to intervene, execute the targeted action, and track post-intervention outcomes to feed back into the next scoring cycle. This closes the loop between prediction and retention, shifting from reactive to proactive.</p>
+      </div>
+    </div>
+ 
+    <p class="project-detail-label" style="margin-top:28px;">Recommendations</p>
+    <div class="project-suggestions">
+      <div class="suggestion-row">
+        <span class="suggestion-badge critical">Critical</span>
+        <p>Implement recurring monthly churn scoring with SHAP-based diagnosis and route each flagged customer to the team best positioned to intervene — shifting retention from a reactive process triggered by cancellation requests to a proactive system that acts before the decision to leave is made.</p>
+      </div>
+      <div class="suggestion-row">
+        <span class="suggestion-badge high">High Priority</span>
+        <p>Prioritize retention resources on high-risk customers with above-median monthly fees first — they represent the greatest revenue exposure per retained customer within the priority group.</p>
+      </div>
+      <div class="suggestion-row">
+        <span class="suggestion-badge high">High Priority</span>
+        <p>Match the intervention to the SHAP-identified driver for each customer — service quality issues require network escalation, declining usage requires re-engagement, and late-payment behavior requires a payment support workflow, not a single generic retention campaign.</p>
+      </div>
+    </div>
+ 
+    <div class="project-footer" style="margin-top:28px;">
+      <a href="YOUR_TELKOM_ML_TABLEAU_URL_HERE" target="_blank" rel="noopener" class="project-link project-link-tableau">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-2px;margin-right:6px"><rect x="10.5" y="1" width="3" height="5"/><rect x="10.5" y="18" width="3" height="5"/><rect x="1" y="10.5" width="5" height="3"/><rect x="18" y="10.5" width="5" height="3"/><rect x="16.5" y="3.5" width="3" height="3"/><rect x="4.5" y="17.5" width="3" height="3"/><rect x="3.5" y="3.5" width="3" height="3"/><rect x="17.5" y="17.5" width="3" height="3"/><rect x="9" y="9" width="6" height="6"/></svg>
+        View Dashboard on Tableau Public
+      </a>
+      <a href="YOUR_TELKOM_ML_GITHUB_URL_HERE" target="_blank" rel="noopener" class="project-link project-link-github">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-2px;margin-right:6px"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+        View Code on GitHub
+      </a>
+    </div>
+ 
+  </div>
+</div>
+
   <!-- Lightbox -->
   <div class="lightbox" id="lightbox" onclick="closeLightbox()">
     <button class="lightbox-close" onclick="closeLightbox()">✕</button>
